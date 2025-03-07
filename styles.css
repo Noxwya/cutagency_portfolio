@@ -1,251 +1,259 @@
 :root {
-    --brand-green: #00CC66;
-    --brand-dark: #004D27;
-    --brand-black: #121212;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: var(--brand-black);
-    color: white;
-    line-height: 1.6;
-  }
-  
-  .hero {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, var(--brand-dark), var(--brand-black));
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .logo-icon {
-    width: 48px;
-    height: 48px;
-    color: var(--brand-green);
-  }
-  
-  .logo h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-left: 1rem;
-  }
-  
-  .tagline {
-    font-size: 1.5rem;
-    color: var(--brand-green);
-  }
-  
-  section {
-    padding: 5rem 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .service-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .service-card svg {
-    color: var(--brand-green);
-    margin-bottom: 1.5rem;
-  }
-  
-  .service-card h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-  }
-  
-  .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  
-  .video-embed {
-    width: 100%;
-    height: 350px; /* Altura padrão, ajuste conforme necessário */
-    display: block;
-  }
-  
-  .video-text {
-    display: none; /* Esconde completamente o elemento */
-  }
-  
+  --brand-green: #00CC66;
+  --brand-dark: #004D27;
+  --brand-black: #121212;
+}
 
-  .video-card {
-    position: relative;
-    width: 100%;
-    max-width: 600px; /* Ajuste conforme necessário */
-    margin: auto;
-    overflow: hidden;
-    border-radius: 8px;
-    background: #111; /* Cor de fundo para destacar os vídeos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--brand-black);
+  color: white;
+  line-height: 1.6;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--brand-dark), var(--brand-black));
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--brand-green);
+}
+
+.logo h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: var(--brand-green);
+}
+
+section {
+  padding: 5rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card svg {
+  color: var(--brand-green);
+  margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.video-embed {
+  width: 100%;
+  height: 350px; /* Altura padrão, ajuste conforme necessário */
+  display: block;
+}
+
+.video-text {
+  display: none; /* Esconde completamente o elemento */
+}
+
+
+.video-card {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Ajuste conforme necessário */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #111; /* Cor de fundo para destacar os vídeos */
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+.video-card:hover img {
+  transform: scale(1.05);
+}
+
+.video-card:hover .video-overlay {
+  opacity: 1;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--brand-green);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-card:hover .play-button {
+  opacity: 1;
+}
+
+.process {
+  background: var(--brand-dark);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  text-align: center;
+  padding: 2rem;
+}
+
+.step-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--brand-green);
+  opacity: 0.5;
+}
+
+.step h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+footer {
+  background: var(--brand-dark);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.footer-content h2 {
+  margin-bottom: 1rem;
+}
+
+.footer-content p {
+  color: var(--brand-green);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #e4405f; /* Cor do Instagram */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c13584; /* Tom mais escuro ao passar o mouse */
+}
+
+.cta-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 2.5rem;
   }
-  
-  .video-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .video-card:hover img {
-    transform: scale(1.05);
-  }
-  
-  .video-card:hover .video-overlay {
-    opacity: 1;
-  }
-  
-  .play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--brand-green);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .video-card:hover .play-button {
-    opacity: 1;
-  }
-  
-  .process {
-    background: var(--brand-dark);
-  }
-  
-  .process-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-  }
-  
-  .step {
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .step-number {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--brand-green);
-    opacity: 0.5;
-  }
-  
-  .step h3 {
-    margin: 1rem 0;
-    font-size: 1.5rem;
-  }
-  
-  footer {
-    background: var(--brand-dark);
-    padding: 5rem 2rem;
-    text-align: center;
-  }
-  
-  .footer-content h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .footer-content p {
-    color: var(--brand-green);
-    margin-bottom: 2rem;
-  }
-  
-  .cta-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    background-color: #e4405f; /* Cor do Instagram */
-    color: white;
+
+  .tagline {
     font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s ease;
   }
-  
-  .cta-button:hover {
-    background-color: #c13584; /* Tom mais escuro ao passar o mouse */
+
+  section {
+    padding: 3rem 1rem;
   }
-  
-  .cta-button svg {
-    width: 24px;
-    height: 24px;
+
+  h2 {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 768px) {
-    .logo h1 {
-      font-size: 2.5rem;
-    }
-  
-    .tagline {
-      font-size: 1.2rem;
-    }
-  
-    section {
-      padding: 3rem 1rem;
-    }
-  
-    h2 {
-      font-size: 2rem;
-    }
+}
+
+@media (max-width: 768px) {
+  .video-embed {
+    height: 200px; /* Reduz a altura do vídeo em telas menores */
   }
+}
