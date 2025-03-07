@@ -145,6 +145,23 @@ h2 {
   transition: opacity 0.3s ease;
 }
 
+.video-container {
+  position: relative;
+  width: 100%; /* Faz o contêiner ocupar toda a largura disponível */
+  padding-bottom: 56.25%; /* Mantém a proporção 16:9 do vídeo */
+  height: 0; /* Define a altura como 0 para controlar via padding-bottom */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* O iframe ocupa toda a altura do contêiner */
+}
+
+
 
 
 .video-card:hover img {
@@ -254,6 +271,6 @@ footer {
 
 @media (max-width: 768px) {
   .video-embed {
-    height: 200px; /* Reduz a altura do vídeo em telas menores */
+    height: 300px; /* Reduz a altura do vídeo em telas menores */
   }
 }
