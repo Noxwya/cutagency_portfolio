@@ -1012,3 +1012,10 @@ body {
   object-fit: cover;
   margin-bottom: 10px;
 }
+
+@media (max-width: 600px) {
+  .hero-container {
+    padding-top: 100px !important; /* aumenta o espaço do topo no mobile */
+    padding-bottom: 40px; /* opcional, pra não ficar apertado embaixo */
+  }
+}
