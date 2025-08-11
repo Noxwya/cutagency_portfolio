@@ -67,7 +67,7 @@ const portfolioData = {
         { id: 'F0tkmkQbse8', title: 'Comment commencer le Cash on Delivery sur Shopify en 2025 (FORMATION GRATUITE)', platform: 'youtube' },
         { id: 'nhJq_Jc8GnU', title: '35 000€ par jour grâce au e-commerce (ce qu’il a compris avant toi…)', platform: 'youtube' },
         { id: 'TXYyeO6uHYY', title: 'Le Dropshipping en 2025 : Arnaque ou Opportunité ?', platform: 'youtube' },
-        { id: 'bowgjgw304k', title: 'De zéro à boutique Shopify en 10 min 🔥', platform: 'youtube' }
+         { id: 'bowgjgw304k', title: 'De zéro à boutique Shopify en 10 min 🔥', platform: 'youtube' }
     ]
 };
 
